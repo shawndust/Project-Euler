@@ -31,7 +31,7 @@ void logic(int passNum)
 int _tmain(int argc, _TCHAR* argv[])
 {
 	int input;
-	cout << "Thinking...";
+	cout << "Thinking for 30 min...";
 	logic(2000000);
 	cin >> input;
 	return 0;
