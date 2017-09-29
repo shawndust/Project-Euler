@@ -1,9 +1,13 @@
+// The prime factors of 13195 are 5, 7, 13 and 29.
+// What is the largest prime factor of the number 600851475143 ?
+
 #include "stdafx.h"
 #include <vector>
 #include <iostream>
 
 using namespace std;
 
+// Test a given number for primality
 bool isPrime(int testNum)
 {
 	for (int i = 2; i < testNum; i++)
@@ -15,6 +19,7 @@ bool isPrime(int testNum)
 	return true;
 }
 
+// Discover which factor is the largest
 void largest_factor(int whichNum)
 {
 	int factors[1] = {  };
