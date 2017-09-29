@@ -4,23 +4,26 @@
 #include <iostream>
 using namespace std;
 
+// Build list of even Fibonacci numbers.
 int even_fibber(int topNum)
 {
-
+	// Define first three Fibonaaci numbers.
 	int zero = 0;
 	int one = 1;
 	int two = 1;
-
+	
+	// Create empty array for the Fibonacci numbers.
 	int fibs[1000] = {};
 	fibs[0] = zero;
 	fibs[1] = one;
 	fibs[2] = two;
 
 	int fib = 0;
-	int even_fib_sum = 0;
+	int even_fib_sum = 0;	// Running summation of even Fibonacci numbers.
 
 	int input = 0;
 
+	// Loop through all Fibonacci numbers until the proper sum has been reached.
 	for (int i = 3; i < topNum; i++)
 	{
 		fibs[i] = fibs[i - 1] + fibs[i - 2];
